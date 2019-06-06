@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 12)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -20,7 +20,7 @@
 
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu mixed)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -978,6 +978,10 @@
     )
   )
 
+  (gr_circle (center 138.811 101.6) (end 138.684 100.33) (layer Edge.Cuts) (width 0.05) (tstamp 5CF951B8))
+  (gr_circle (center 138.684 124.072666) (end 138.557 122.802666) (layer Edge.Cuts) (width 0.05) (tstamp 5CF951B6))
+  (gr_circle (center 102.362 124.072666) (end 102.235 122.802666) (layer Edge.Cuts) (width 0.05) (tstamp 5CF951B4))
+  (gr_circle (center 102.489 101.473) (end 102.362 100.203) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 100.584 124.714) (end 100.584 100.838) (layer Edge.Cuts) (width 0.1) (tstamp 5CF95139))
   (gr_line (start 139.446 125.73) (end 101.6 125.73) (layer Edge.Cuts) (width 0.1) (tstamp 5CF95138))
   (gr_line (start 140.462 100.838) (end 140.462 124.714) (layer Edge.Cuts) (width 0.1) (tstamp 5CF95134))
