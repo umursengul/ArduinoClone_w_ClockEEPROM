@@ -1,6 +1,26 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Bayterek_Components_DS1337_8pin_Bayterek
+#
+DEF Bayterek_Components_DS1337_8pin_Bayterek U 0 40 Y Y 1 F N
+F0 "U" 50 100 49 H V C CNN
+F1 "Bayterek_Components_DS1337_8pin_Bayterek" 50 0 49 H V C CNN
+F2 "" 50 100 49 H I C CNN
+F3 "" 50 100 49 H I C CNN
+DRAW
+S -1000 -150 -200 -1000 0 1 0 f
+X X1 1 -1100 -350 100 R 50 50 1 1 I
+X X2 2 -1100 -600 100 R 50 50 1 1 I
+X INTA 3 -1100 -800 100 R 50 50 1 1 I I
+X GND 4 -600 -1100 100 U 50 50 1 1 O
+X SDA 5 -100 -800 100 L 50 50 1 1 B
+X SCL 6 -100 -600 100 L 50 50 1 1 I
+X INTB 7 -100 -350 100 L 50 50 1 1 I I
+X Vcc 8 -600 -50 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_01x04
 #
 DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
