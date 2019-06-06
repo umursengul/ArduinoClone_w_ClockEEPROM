@@ -106,19 +106,13 @@ $Comp
 L MCU_Microchip_ATmega:ATmega328P-AU U4
 U 1 1 5CF90E0E
 P 5350 3000
-F 0 "U4" H 5350 1411 50  0000 C CNN
-F 1 "ATmega328P-AU" H 5350 1320 50  0000 C CNN
+F 0 "U4" H 5750 1550 50  0000 C CNN
+F 1 "ATmega328P-AU" H 5750 1450 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5350 3000 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5350 3000 50  0001 C CNN
 	1    5350 3000
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 3550 6100 1000 1050
-U 5CF95995
-F0 "Connectors" 25
-F1 "Connector.sch" 25
-$EndSheet
 $Comp
 L Bayterek_Components:DS1337_8pin_Bayterek U3
 U 1 1 5CFA1F88
@@ -174,4 +168,149 @@ F 3 "" H 9800 2800 50  0001 C CNN
 	1    9800 2800
 	1    0    0    -1  
 $EndComp
+Text Label 3400 6300 2    39   ~ 0
+MISO
+Wire Wire Line
+	3550 6300 3400 6300
+Text Label 5950 2200 0    39   ~ 0
+MISO
+Wire Wire Line
+	3550 6500 3400 6500
+Wire Wire Line
+	3550 6600 3400 6600
+Wire Wire Line
+	3550 7000 3400 7000
+Wire Wire Line
+	3550 6400 3400 6400
+Wire Wire Line
+	3550 7150 3450 7150
+Text Label 3400 6500 2    39   ~ 0
+SCK
+Text Label 3400 6600 2    39   ~ 0
+RESET
+Text Label 3400 7000 2    39   ~ 0
+Vcc
+Text Label 3400 6400 2    39   ~ 0
+MOSI
+Text Label 3400 7150 2    39   ~ 0
+GND
+Text Label 5950 2100 0    39   ~ 0
+MOSI
+Text Label 5950 2300 0    39   ~ 0
+SCK
+Text Label 5950 3300 0    39   ~ 0
+RESET
+Wire Wire Line
+	5350 1500 5350 1350
+Wire Wire Line
+	5350 1350 5450 1350
+Wire Wire Line
+	5450 1350 5450 1500
+Wire Wire Line
+	5350 1350 5350 1150
+Connection ~ 5350 1350
+Text Label 5350 1150 0    39   ~ 0
+VCC
+Wire Wire Line
+	5350 4500 5350 4700
+Text Label 5350 4700 0    39   ~ 0
+GND
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5CFC1B6B
+P 3450 7350
+F 0 "#PWR?" H 3450 7150 50  0001 C CNN
+F 1 "GNDPWR" H 3454 7196 50  0000 C CNN
+F 2 "" H 3450 7300 50  0001 C CNN
+F 3 "" H 3450 7300 50  0001 C CNN
+	1    3450 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 7350 3450 7150
+Connection ~ 3450 7150
+Wire Wire Line
+	3450 7150 3400 7150
+$Sheet
+S 3550 6200 800  1000
+U 5CF95995
+F0 "Connectors" 39
+F1 "Connector.sch" 39
+F2 "MISO" O L 3550 6300 39 
+F3 "SCK" B L 3550 6500 39 
+F4 "RESET" O L 3550 6600 39 
+F5 "Vcc" I L 3550 7000 39 
+F6 "MOSI" I L 3550 6400 39 
+F7 "GND" I L 3550 7150 39 
+F8 "RX" I L 3550 6800 39 
+F9 "TX" O L 3550 6700 39 
+F10 "SDA" B R 4350 6300 39 
+F11 "D2" B R 4350 6550 39 
+F12 "D3" B R 4350 6650 39 
+F13 "D4" B R 4350 6750 39 
+F14 "D5" B R 4350 6850 39 
+F15 "D6" B R 4350 6950 39 
+F16 "D7" B R 4350 7050 39 
+F17 "D8" B R 4350 7150 39 
+$EndSheet
+Wire Wire Line
+	3550 6800 3400 6800
+Wire Wire Line
+	3400 6700 3550 6700
+Wire Wire Line
+	4350 6300 4500 6300
+Wire Wire Line
+	4350 6550 4500 6550
+Wire Wire Line
+	4350 6650 4500 6650
+Wire Wire Line
+	4350 6750 4500 6750
+Wire Wire Line
+	4350 6850 4500 6850
+Wire Wire Line
+	4350 6950 4500 6950
+Wire Wire Line
+	4350 7050 4500 7050
+Wire Wire Line
+	4350 7150 4500 7150
+Text Label 3400 6800 2    39   ~ 0
+RX
+Text Label 3400 6700 2    39   ~ 0
+TX
+Text Label 4500 6300 0    39   ~ 0
+SDA
+Text Label 4500 6550 0    39   ~ 0
+D2
+Text Label 4500 6650 0    39   ~ 0
+D3
+Text Label 4500 6750 0    39   ~ 0
+D4
+Text Label 4500 6850 0    39   ~ 0
+D5
+Text Label 4500 6950 0    39   ~ 0
+D6
+Text Label 4500 7050 0    39   ~ 0
+D7
+Text Label 4500 7150 0    39   ~ 0
+D8
+Text Label 5950 3800 0    39   ~ 0
+D3
+Text Label 5950 3900 0    39   ~ 0
+D4
+Text Label 5950 4000 0    39   ~ 0
+D5
+Text Label 5950 4100 0    39   ~ 0
+D6
+Text Label 5950 4200 0    39   ~ 0
+D7
+Text Label 5950 1800 0    39   ~ 0
+D8
+Text Label 5950 3100 0    39   ~ 0
+SDA
+Text Label 5950 3500 0    39   ~ 0
+RX
+Text Label 5950 3600 0    39   ~ 0
+TX
+Text Label 5950 3700 0    39   ~ 0
+D2
 $EndSCHEMATC
